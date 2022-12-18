@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Formulaire d'inscription à l'UV-BF</title>
+		<link rel="stylesheet" href="Formulaire.css">
+	</head>
+
+	<body>
+		<fieldset style="width: 600px">
+			<h1><u><b>Inscription à UV-BF </b></u></h1>
+			<form method="POST">
+				<label >Nom et prenom * :</label>
+				<input type="text" id="nom" class="idt" ><br><br>
+				<di id="b"></di><br><br>
+				<label>CNIB * :</label>
+				<input type="text" id="cnib"  ><br><br>
+				<di id="aa"></di><br><br>
+				<label>Adresse e-mail * :</label>
+				<input type="email" id="email" class="idt" ><br><br>
+				<di id="c"></di><br><br>
+
+				<label >Niveau d'etude * :</label><br><br>
+				<input type="radio" name="choix">Primaire<br><br>
+				<input type="radio" name="choix" checked>Secondaire<br><br>
+				<input type="radio" name="choix">Universitaire<br><br>
+				<input type="radio" name="choix">Autre<br>
+				<p>Modules de formation :</p>
+				<select >
+					<option>Programmation web 1</option>
+					<option>Bureautique</option>
+					<option>SE et Réseaux infos</option>
+					<option>Géomatique</option>
+				</select><br><br>
+				<label>Un commentaire</label>
+				<textarea ></textarea>
+				<p>(*) Champs obligatoire</p>
+				<input type="submit" id="submit" value="Envoyer">
+				<input type="reset" value="Annuler" id="cancel">
+			</form>
+		</fieldset>
+		<div id="res"></div>
+	<script type="text/javascript" src="Formulaire.js"></script>
+	</body>
+</html>
